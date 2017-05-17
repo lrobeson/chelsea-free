@@ -57,49 +57,23 @@
   <div class="starter-template">
     <!-- <h1>Random Question?</h1> -->
     <h1>Is Chelsea Manning Free Yet?</h1>
-    <h1><span id="status">Status:</span></h1>
+    <h1><span id="status">YES!</span></h1>
 
     <div id="ifYes">
       <div class="panel panel-default" data-toggle="tooltip" data-placement="top" title="">
         <div class="panel-body">
-          <h2><span id="clock">Status</span> days to go:<br/>May 17th, 2017</h2>
+          <h2>0 days to go:<br/>May 17th, 2017</h2>
         </div>
       </div>
     </div>
+    
+    <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/LlY90lG_Fuw?rel=0" frameborder="0" allowfullscreen></iframe>
 
   </div>
 </div>
 
 <a class="twitter-timeline" href="https://twitter.com/xychelsea">Tweets by xychelsea</a>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<script type="text/javascript">
-  // Turn on Bootstrap
-  $('[data-toggle="tooltip"]').tooltip();
-
-  $('#clock').countdown('2017/05/17', function(event) {
-    $(this).html(event.strftime('%D'));
-  });
-
-  var $clock = $('#clock');
-
-  function isSheFreeYet(event) {
-    var $status;
-
-    if ($clock < '00') {
-      $status = 'Yes!';
-    }
-    else {
-      $status = 'No :(';
-    }
-
-    document.getElementById('status').innerHTML = $status;
-  }
-
-  window.onload = isSheFreeYet();
-
-</script>
-
 
 <nav class="navbar navbar-inverse navbar-bottom">
   <div class="container">
